@@ -16,7 +16,7 @@
     <input type ="password" id="secretphrase" value ="Let me in"> <br><br>
     <label for="phrase">Enter a phrase </label>
     <input type ="text" id="phrase"  autofocus> <br><br>
-    <input type="button" class ="btn btn primary" onclick="processPhrase()" value="Check the phrase"/>
+    <input type="button" style="background-color: rgb(0, 77, 128);" class ="btn btn primary" onclick="processPhrase()" value="Check the phrase"/>
 
 </form>
 <br>
@@ -29,6 +29,7 @@
 
 <script> 
 
+
 var correct=0,wrong=0;
 
 function processPhrase (){
@@ -38,6 +39,7 @@ function processPhrase (){
     phraseValue = document.getElementById("phrase").value
 
     resultDiv = document.getElementById("result")
+
 
     if(spValue==phraseValue){
         alert("Access allowed");
